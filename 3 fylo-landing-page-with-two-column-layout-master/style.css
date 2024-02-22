@@ -287,6 +287,10 @@ footer{
 
 
 @media screen and (max-width: 1000px){
+    .logo{
+        width: 110px;
+        height: auto;
+    }
 
     nav{
         padding: 50px 30px 0px 30px;
@@ -315,7 +319,7 @@ footer{
     }
 
     .inputbutton1-1 input{
-        width: 93%;
+        width: 92%;
     }
 
     .inputbutton1-1 button{
@@ -348,7 +352,7 @@ footer{
     .see-fylo{
         text-align: center;
         padding-bottom: 0.2em; /* Distancia desde la línea de texto al subrayado */
-        width: 38%;
+        width: 40%;
     }
 
 
@@ -388,16 +392,16 @@ footer{
         align-items: center;
         width: 100%;
     }
-    
+
     .inputbutton2 input{
-            width: 135%;
-            margin-left:90% ;
+            width: 130%;
+            margin-left: 100%;
     }
 
 
     .inputbutton2 button{
-        width: 150%;
-        margin-left:90% ;
+        width: 145%;
+        margin-left: 100%;
     }
 
 
