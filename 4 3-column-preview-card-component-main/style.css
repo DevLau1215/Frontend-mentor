@@ -1,0 +1,102 @@
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+
+    --paragraphs: hsla(0, 0%, 100%, 0.75);
+    --background-headings-buttons: hsl(0, 0%, 95%);
+    }
+    
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-family: "Lexend Deca", sans-serif;
+        font-size: 15px;
+    }
+
+    h1{
+        font-family: "Big Shoulders Display", sans-serif;
+        font-weight: 700;
+    }
+
+
+    .container {
+        display: flex;
+        color: var(--paragraphs);
+        width: 800px;
+        height: 400px;
+        border-radius: 30%;
+    }
+
+
+    @media screen and (max-width: 500px){
+        .container{
+            display: flex;
+            flex-direction: column;
+            margin: 25px;
+            
+        }
+    }
+
+
+    .orange{
+        background-color: var(--Bright-orange);
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .cyan{
+        background-color: var(--Dark-cyan);
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .green{
+        background-color: var(--Very-dark-cyan);
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    
+    .container button{
+        width: 140px;
+        height: 40px;
+        background-color: var(--background-headings-buttons);
+        border: solid;
+        border-radius: 60px;
+        cursor:pointer;
+    }
+
+    .orange button{
+        Color: var(--Bright-orange);
+    }
+
+    .cyan button{
+        Color: var(--Dark-cyan);
+    }
+
+    .green button{
+        Color: var(--Very-dark-cyan);
+    }
+
+
+
+    .container button:hover {
+        color: var(--background-headings-buttons);
+        background-color: rgba(255, 255, 255, 0);
+    }
