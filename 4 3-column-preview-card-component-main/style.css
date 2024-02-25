@@ -20,37 +20,38 @@
         align-items: center;
         height: 100vh;
         font-family: "Lexend Deca", sans-serif;
+        background-color: var(--background-headings-buttons);
         font-size: 15px;
-    }
+        }
 
     h1{
         font-family: "Big Shoulders Display", sans-serif;
+        Color: var(--background-headings-buttons);
         font-weight: 700;
+        font-size: 38px;
     }
 
 
     .container {
         display: flex;
         color: var(--paragraphs);
-        width: 800px;
-        height: 400px;
+        width: 765px;
+        height: 420px;
+        border-radius: 8px;
+        overflow: hidden;
     }
-
-
-
 
     .orange{
         background-color: var(--Bright-orange);
-        padding: 30px;
+        padding: 40px;
         display: flex;
         flex-direction: column;
         gap: 30px;
-        border-radius: 8px 0px 0px 8px;
     }
 
     .cyan{
         background-color: var(--Dark-cyan);
-        padding: 30px;
+        padding: 40px;
         display: flex;
         flex-direction: column;
         gap: 30px;
@@ -59,21 +60,27 @@
 
     .green{
         background-color: var(--Very-dark-cyan);
-        padding: 30px;
+        padding: 40px;
         display: flex;
         flex-direction: column;
         gap: 30px;
-        border-radius: 0px 8px 8px 0px;
+    }
+
+    .container p{
+        line-height: 1.5;
+        font-weight: 300;
+        font-size: 13px;
     }
 
     
     .container button{
-        width: 140px;
-        height: 40px;
+        width: 126px;
+        height: 45px;
         background-color: var(--background-headings-buttons);
         border: solid;
         border-radius: 60px;
         cursor:pointer;
+        margin-top: 12%;
     }
 
     .orange button{
@@ -98,19 +105,47 @@
 
     
     @media screen and (max-width: 500px){
+
+        body{
+            height: 220vh;
+            }
         
         .container{
             display: flex;
             flex-direction: column;
-            padding: 20px;
+            width: 290px;
+            height: 1170px;
         }
 
-        .orange{
-            border-radius: 8px 8px 0px 0px;
+        .container button{
+            margin: 0%;  
+            width: 135px;  
         }
 
-        .green{
-            border-radius: 0px 0px 8px 8px;
+        .orange,
+        .cyan,
+        .green {
+            gap: 24px;
         }
+
+        .container p{
+            font-size: 14px;
+        }
+
+
     }
 
+/* Transisiones*/
+    @media screen and (min-width: 500px){
+.orange,
+.cyan,
+.green {
+    transition: transform 0.3s ease; 
+}
+
+.orange:hover,
+.cyan:hover,
+.green:hover{
+    transform: translateY(-10px);
+}
+    }
