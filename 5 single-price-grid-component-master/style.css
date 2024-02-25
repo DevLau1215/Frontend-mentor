@@ -18,6 +18,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    height: 750px;
     font-family: "Karla", sans-serif;
     background-color: var(--Light-Gray);
     font-size: 16px;
