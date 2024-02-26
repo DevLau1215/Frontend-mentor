@@ -1,4 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
     const fileInput = document.getElementById("fileInput");
     const progressBar = document.getElementById("progressBar");
     const progress = document.getElementById("progress");
@@ -32,4 +31,3 @@ document.addEventListener("DOMContentLoaded", () => {
         progress.style.width = percentage + "%";
         circle.style.left = "calc(" + percentage + "% - 6px)";
     }
-});
