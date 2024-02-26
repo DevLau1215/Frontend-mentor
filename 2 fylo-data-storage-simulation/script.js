@@ -19,7 +19,7 @@ function manejarSubidaArchivo(evento) {
     }
 }
 
-function subirArchivo(archivo) {
+function subirArchivo() {
     archivosSubidos++;
     const porcentajeProgreso = archivosSubidos * 10;
     actualizarBarraProgreso(porcentajeProgreso);
