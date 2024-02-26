@@ -66,6 +66,12 @@ section{
     border-radius: 8px;
     align-items: center;
     background-color: var(--Very-Dark-Blue);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover{
+    transform: scale(1.1);
 }
 
 .icon img {
@@ -73,7 +79,16 @@ section{
     height: auto; 
 }
 
+/* Input para subir archivos */
+.file-input {
+    cursor: pointer;
+}
 
+#fileInput {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
 
 /*card2*/
 .espacio{
@@ -181,8 +196,7 @@ span{
     }
 
 /*barra de almacenamiento*/
-
-.barra{
+.barra {
     height: 12px;
     width: 100%;
     background-color: var(--Very-Dark-Blue);
@@ -192,23 +206,22 @@ span{
     position: relative;
 }
 
-.barra::before {
-    content: "";
+.progress {
     position: absolute;
-    background: linear-gradient(120deg , hsl(6, 100%, 80%) , hsl(335, 100%, 65%));
-    height: 12px ;
+    background: linear-gradient(120deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    height: 100%;
     border-radius: 20px;
-    width: 80%;
+    width: 0;
+    transition: width 0.8s ease; 
 }
 
-.barra::after {
-    content: "";
+.circle {
     position: absolute;
-    background-color: #fff; 
-    height: 10px; 
-    width: 10px;
-    border-radius: 100%;
-    top: 50%; 
-    right:20.4%;
-    transform:translateY(-50%); /* posision del circulo*/
+    background-color: #fff;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    left: 0;
+    transition: left 0.8s ease;
 }
+

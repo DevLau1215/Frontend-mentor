@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,8 +34,11 @@
           <div class="icon">
             <img src="images/icon-folder.svg" alt="icon">
           </div>
-          <div class="icon">
-            <img src="images/icon-upload.svg" alt="icon">
+          <div class="icon" id="fileIcon">
+            <label for="fileInput" class="file-input">
+              <img src="images/icon-upload.svg" alt="icon">
+          </label>
+          <input type="file" id="fileInput" multiple></input>
           </div>
         </div>
       </div>
@@ -45,7 +49,9 @@
           <div>
             <p>You’ve used <span>815 GB</span> of your storage</p>
           </div>
-          <div class="barra">
+          <div  class="barra" id="progressBar">
+            <div class="progress" id="progress"></div>
+            <div class="circle" id="circle"></div>            
           </div>
           <div class="GB">
             <p>0 GB</p>
