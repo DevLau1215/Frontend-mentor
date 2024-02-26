@@ -7,6 +7,23 @@
     --White: hsl(0, 0%, 100%);
 }
 
+.color-change-1 {
+    --Cyan: hsl(78, 100%, 75%);
+    --LightCyan: hsl(20, 100%, 80%);
+    --Bright-Yellow: hsl(30, 100%, 70%);
+    --Grayish-Blue: hsl(210, 40%, 70%);
+    --White: hsl(0, 0%, 100%);
+}
+
+.color-change-2 {
+    --Cyan: hsla(320, 100%, 75%, 0.692);
+    --LightCyan: hsl(20, 100%, 80%);
+    --Bright-Yellow: hsl(30, 100%, 70%);
+    --Grayish-Blue: hsl(210, 40%, 70%);
+    --White: hsl(0, 0%, 100%);
+}
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -23,6 +40,39 @@ body {
     background-color: var(--Light-Gray);
     font-size: 16px;
 }
+
+.floating{
+    width: 130px;
+    height: 40px;
+    position: absolute;
+    top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+}
+
+.circulo-flot1{
+    border-radius: 100%;
+    width: 50px;
+    height: 40px;
+    background-color: hsl(179, 61%, 44%);
+}
+
+.circulo-flot2{
+    border-radius: 100%;
+    width: 50px;
+    height: 40px;
+    background-color: hsl(299, 72%, 62%);
+}
+
+.circulo-flot3{
+    border-radius: 100%;
+    width: 50px;
+    height: 40px;
+    background-color: hsl(71, 73%, 54%);
+}
+
 
 .container {
     display: flex;
@@ -144,6 +194,9 @@ body {
 /*end tercer cuadro*/
 
 @media screen and (min-width: 768px) {
+    body {
+        height: 100%;
+    }
     .container {
         width: 650px;
         height: 450px ;
