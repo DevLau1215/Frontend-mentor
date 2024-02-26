@@ -104,10 +104,10 @@
 
 
     
-    @media screen and (max-width: 500px){
+    @media screen and (max-width: 900px){
 
         body{
-            height: 200vh;
+            height: 190vh;
             }
         
         .container{
@@ -136,7 +136,7 @@
     }
 
 /* Transisiones*/
-    @media screen and (min-width: 500px){
+    @media screen and (min-width: 900px){
 .orange,
 .cyan,
 .green {
