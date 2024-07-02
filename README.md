@@ -1,7 +1,5 @@
 <div align="center">
-    <a href="https://www.javascript100.dev">
     <img src="./Banners.png" /> 
-    </a>
   <h3>
     <strong>Desafios de Frontend Mentor by [Laura Luque](https://github.com/MiauraDev)</strong>
   </h3>
