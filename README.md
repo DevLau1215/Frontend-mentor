@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="./Banners.png" /> 
+    <img src="https://i.imgur.com/S8ole7Y.png" /> 
   <h3>
     <strong>Desafios de Frontend Mentor by [Laura Luque](https://github.com/MiauraDev)</strong>
   </h3>
